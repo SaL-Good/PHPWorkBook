@@ -9,24 +9,28 @@
     <?php
         //Single line comment
         echo "Standard Tag!<br>";#Comment end of line
-        /*
-            Multi-line comment
-            Comment Large block
-            ....................
-            ....................
-            Line n
-        */
-        echo "Multi-line comment<br>";
-        /** 
-         * DocBlock Comment
-            if(true){
-                echo "If statement<br>";
-            }else{
-                echo "Else statement<br>";
-            }   
-        */
-        echo "DocBlock Comment<br>";
-    ?>
+        $student = [
+    "id" => "AU-CS-001",
+    "name" => "សុខ ជា",
+    "gpa" => 3.85
+];
+echo "អត្តលេខ៖ {$student['id']} | ឈ្មោះ៖ {$student['name']} | GPA: {$student['gpa']}";
+$products = [
+    ["title" => "Laptop Dell", "price" => 850],
+    ["title" => "Mouse Logitech", "price" => 25]
+];
+echo "ទំនិញទី១៖ " . $products[0]["title"] . " - តម្លៃ៖ " . $products[0]["price"] . " $";
+?>
+<?php
+$fruits = ["Apple", "Banana"];
+array_push($fruits, "Orange"); // បន្ថែម "Orange" ទៅខាងចុង
+
+$appName = "angkor portal";
+$upperName = strtoupper($appName);
+
+echo "ចំនួនធាតុ៖ " . count($fruits) . " | ឈ្មោះធំ៖ {$upperName}";
+?>
+     
     
 </body>
 </html>
